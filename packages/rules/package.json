@@ -1,0 +1,14 @@
+{
+  "name": "@worklint/rules",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "tsup": "^5.12.6"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --outDir bin",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --outDir bin --watch"
+  }
+}
